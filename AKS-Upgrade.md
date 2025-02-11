@@ -29,7 +29,7 @@ This document outlines the steps followed to upgrade an Azure Kubernetes Service
 az aks get-upgrades --resource-group <ResourceGroupName> --name <AKSClusterName> --query "controlPlaneProfile.upgrades[*].kubernetesVersion"
 az aks get-upgrades --resource-group demoaks-rg --name demo-aks --output table
 ```
-
+[output](https://github.com/ravdy/azure-devops/blob/main/pic/aks-available-version.png)
 ### 2. Upgrade Nginx Ingress Controller  
 ```sh
 helm upgrade "nginx-ingress-internal" ingress-nginx/ingress-nginx \
