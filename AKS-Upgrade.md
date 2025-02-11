@@ -46,9 +46,13 @@ helm upgrade "nginx-ingress-external" ingress-nginx/ingress-nginx \
 az aks upgrade --resource-group demoaks-rg --name demo-aks --kubernetes-version 1.29.10
 ```
 - The upgrade process replaces the nodes **one by one** to ensure minimal downtime.
+- 
 ![aks-upgrade-process-1](https://github.com/ravdy/azure-devops/blob/main/images/aks-upgrade-process-1.png)
+
 ![aks-upgrade-process-2](https://github.com/ravdy/azure-devops/blob/main/images/aks-upgrade-process-2.png)
+
 ![aks-upgrade-process-3](https://github.com/ravdy/azure-devops/blob/main/images/aks-upgrade-process-3.png)
+
 ![aks-upgrade-process-4](https://github.com/ravdy/azure-devops/blob/main/images/aks-upgrade-process-4.png)
 ---
 
